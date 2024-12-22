@@ -196,7 +196,9 @@ export function getTokenForProvider(
     provider: ModelProviderName,
     character: Character
 ) {
+
     switch (provider) {
+
         case ModelProviderName.OPENAI:
             return (
                 character.settings?.secrets?.OPENAI_API_KEY ||
