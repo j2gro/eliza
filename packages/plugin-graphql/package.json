@@ -1,0 +1,27 @@
+{
+  "name": "@ai16z/plugin-graphql",
+  "version": "0.1.0",
+  "description": "GraphQL plugin for Eliza agents",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "clean": "rimraf dist",
+    "prepare": "pnpm run build"
+  },
+  "dependencies": {
+    "@ai16z/eliza": "workspace:*",
+    "graphql": "^16.8.1",
+    "graphql-request": "^6.1.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "jest": "^29.5.0",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "@ai16z/eliza": ">=0.1.0"
+  }
+}
